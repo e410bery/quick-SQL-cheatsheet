@@ -30,6 +30,7 @@ Pull requests are welcome. Enjoy!
 * `SELECT` * `FROM` table_name `WHERE NOT` condition;
 * `SELECT` * `FROM` table_name `WHERE` condition1 `AND` (condition2 `OR` condition3);
 * `SELECT` * `FROM` table_name `WHERE EXISTS` (`SELECT` column_name `FROM` table_name `WHERE` condition);
+* Logically, SQL handles "for all" ( ∀ ) requests by translating them into a double negative: "Find X where there does NOT EXIST a Y for which there DOES NOT EXIST a Z."
 
 ### **ORDER BY**: used to sort the result-set in ascending or descending order
 * `SELECT` * `FROM` table_name `ORDER BY` column;
